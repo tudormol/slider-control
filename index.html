@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="RangeInput.css" rel="stylesheet" />
+    <script src="RangeInput.js"></script>
+</head>
+
+<body>
+    <div class="rangeInput slider volume">
+        <span class="current"></span>
+        <span class="bg"></span>
+        <div class="knob"></div>
+    </div>
+
+    <script>
+        var volumeSlider = new RangeInput({
+            selector : '.slider.volume',
+            onChange : function (value, domElement) {
+                console.log('çhanged', value)
+            },
+            setValue : 75
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  background: #000;
+  margin: 100px;
+}
+
+.rangeInput {
+  width: 200px;
+  height: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.rangeInput span {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  z-index: 3;
+  overflow: hidden;
+}
+.rangeInput span.current:after {
+  content: "";
+  background: #1753AD;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rangeInput span.bg {
+  width: 100%;
+  background: #1B212A;
+  z-index: 2;
+}
+.rangeInput .knob {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=RangeInput.css.map */
