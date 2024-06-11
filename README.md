@@ -1,6 +1,7 @@
 # slider-control
 A slider control that can be used as a volume slider or anything else
 
+![slider control](http://tudormoldovan.eu/git-assets/slider.png)
 
 - selector - css dom element selector string / dom object
 - setValue - value to set on init
